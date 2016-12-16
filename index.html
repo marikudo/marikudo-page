@@ -1,10 +1,95 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Red Mariano</title>
-</head>
-<body>
-<h1>Welcome</h1>
-<img src="social-media/facebook.png" />
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Red Mariano</title>
+    <meta name="description" content="Developing web application and mobile application" />
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="wrapper">
 
+  <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand brand-click" href="#">RED</a>
+            </div>
+           
+        </div>
+    </nav>
+
+    <header id="first">
+        <div class="header-content">
+			<div class="row">
+                <h1 class="page-heading">Features</h1>
+                <p class="short-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br />
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <br />
+                <br />
+            </div>
+        </div>
+    </header>
+   
+
+     <footer id="footer">
+      
+      <div class="footer-most">   
+      <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                <p class="copyright">&copy; 2016 RED MARIANO.</a> All rights reserved.</p>
+                </div>
+          </div>
+      </div>
+      </div>  
+    </footer>
+
+    <!--scripts loaded here from cdn for performance -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.particleground.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.smoothwheel.js"></script>
+    <script src="js/jQuery.scrollSpeed.js"></script>
+    <script type="text/javascript">
+       
+          function ValidationEvent(){
+   
+              var email = document.getElementById("mce-EMAIL");
+                   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                    if (!filter.test(email.value)) {
+                             document.getElementById('errorMessage').innerHTML = 'Please enter valid email';
+                          email.focus;
+                   return false;
+                  }
+          }
+
+          document.addEventListener('DOMContentLoaded', function () {
+            particleground(document.getElementById('first'), {
+              dotColor: '#9ed7e2',
+              lineColor: '#9ed7e2',
+              density : 9000
+            });
+           /* var intro = document.getElementById('first');
+            intro.style.marginTop = - intro.offsetHeight / 2 + 'px';*/
+          }, false);
+
+            $(document).ready(function(){
+             // $("#wrapper").smoothWheel()
+             jQuery.scrollSpeed(200, 800);
+          });
+    </script>
+  </body>
 </html>
